@@ -34,10 +34,16 @@ const card = [
     methods: {
       goNext() {
         this.currentIndex++;
+       if(this.currentIndex === card.length){
+        this.currentIndex = 0
+       }
       },
 
       goPrev() {
         this.currentIndex--;
+        if(this.currentIndex === -1){
+          this.currentIndex = card.length-1
+         }
       },
   }});
 

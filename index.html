@@ -27,7 +27,7 @@
             </div>
             <div class="carousel-container d-flex g">
                 <div class="thumbnail" v-for="(pic, i) in card">
-                    <img :src="pic.image" :alt="pic.title" :class= "i === currentIndex ? 'active-thumb' : '' ">
+                    <img :src="pic.image" :alt="pic.title" :class= "i === currentIndex ? 'active-thumb' : '' " >
                 </div>
             </div>
        </div>

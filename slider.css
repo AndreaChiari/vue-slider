@@ -54,7 +54,7 @@ figcaption{
     margin: 5px;
 }
 
-.active-thumb{
+.thumbnail img.active-thumb{
     filter: grayscale(0%);
     border: 3px  solid #c74410;
 }
