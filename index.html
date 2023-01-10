@@ -20,14 +20,14 @@
                 <figure class="figure-main" v-for="(pic,i) in card" v-show="i === currentIndex" >
                     <img class="img" :src="pic.image" :alt="pic.title" />    
                     <figcaption>
-                        <h1></h1>
-                        <h3></h3>
+                        <h1 v-text="pic.title"></h1>
+                        <h3 v-text="pic.text"></h3>
                     <figcaption>
                 </figure>
             </div>
             <div class="carousel-container d-flex g">
-                <div class="thumbnail" v-for="pic in card">
-                    <img :src="pic.image" :alt="pic.title">
+                <div class="thumbnail" v-for="(pic, i) in card">
+                    <img :src="pic.image" :alt="pic.title" :class= "i === currentIndex ? 'active-thumb' : '' ">
                 </div>
             </div>
        </div>
