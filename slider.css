@@ -47,3 +47,13 @@ figcaption{
     font-family: sans-serif;
     text-shadow: 3px 3px #141614;
 }
+
+.carousel-container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.thumbnail{
+    margin-top: 30px;
+    width: calc(800px / 5);
+}
